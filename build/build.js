@@ -6,16 +6,14 @@
     modules: [
         {
             name: 'sample/app',
+            include: [
+                'sample/module2',
+                'sample/dependency2'
+            ],
             exclude: [
                 'jquery'
             ]
         }
-    ],
-    stubModules1: [
-        'sample/plugin',
-        'sample/dependency',
-        'sample/dependency-core',
-        'sample/dependency-core-builder'
     ],
     findNestedDependencies: false,
     optimize: 'none',
